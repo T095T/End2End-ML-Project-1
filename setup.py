@@ -24,6 +24,7 @@ setuptools.setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"": "src"},
+    package_dir={"": "src"},  # we made possibleto import modules as if they were part of a package.
     packages=setuptools.find_packages(where="src")
 )
+
